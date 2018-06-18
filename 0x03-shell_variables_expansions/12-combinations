@@ -1,0 +1,2 @@
+#!/bin/bash
+touch alphabet_pairs; echo -e {a..z}{a..z}"\n" >alphabet_pairs; grep -v oo alphabet_pairs; cat alphabet_pairs
