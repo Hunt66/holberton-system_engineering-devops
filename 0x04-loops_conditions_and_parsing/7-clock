@@ -2,7 +2,8 @@
 # This script is displaying "Holberton School" 10 times
 c=0
 h=0
-while [ $c -le 779 ]
+t=0
+while [ $t -le 780 ]
 do
     if  [ $(( $c % 60 )) -eq 0 ]
     then
@@ -13,4 +14,5 @@ do
 	echo $c
 	c=$(( $c + 1 ))
     fi
+    t=$(( $t + 1 ))
 done
