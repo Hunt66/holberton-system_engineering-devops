@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # lists files in directory without number dash
-for ((i = 0; i < 10; i++));
+ls="$(ls)"
+for item in $ls
 do
-    echo "Holberton Schol"
+    echo "$item" | cut -d- -f2-
 done
