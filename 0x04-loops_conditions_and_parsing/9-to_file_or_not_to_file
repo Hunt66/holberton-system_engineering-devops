@@ -3,7 +3,7 @@
 flnm=holbertonschool
 if [ -e $flnm ]
 then
-    echo "holbertonschool file exist"
+    echo "holbertonschool file exists"
     if [ -s $flnm ]
     then
 	echo "holbertonschool file is not empty"
