@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # lists files in directory without number dash
-ls="$(ls)"
+ls=$(ls)
 for item in $ls
 do
     echo "$item" | cut -d- -f2-
