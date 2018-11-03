@@ -12,5 +12,5 @@ do
     else
 	echo "Holberton School"
     fi
-    c=$(( $c + 1 ))
+    c=$(( c + 1 ))
 done

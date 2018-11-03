@@ -2,13 +2,13 @@
 # This is fizzbuzz in bash
 for ((i = 1; i < 101; i++));
 do
-    if [ $(( $i % 15 )) -eq 0 ]
+    if [ $(( i % 15 )) -eq 0 ]
     then
 	echo "FizzBuzz"
-    elif [ $(( $i % 5 )) -eq 0 ]
+    elif [ $(( i % 5 )) -eq 0 ]
     then
 	echo "Buzz"
-    elif [ $(( $i % 3 )) -eq 0 ]
+    elif [ $(( i % 3 )) -eq 0 ]
     then
 	echo "Fizz"
     else

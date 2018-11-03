@@ -5,14 +5,14 @@ h=0
 t=0
 while [ $t -le 779 ]
 do
-    if  [ $(( $c % 60 )) -eq 0 ]
+    if  [ $(( c % 60 )) -eq 0 ]
     then
 	echo "Hour:" $h
-	h=$(( $h + 1 ))
+	h=$(( h + 1 ))
 	c=1
     else
 	echo $c
-	c=$(( $c + 1 ))
+	c=$(( c + 1 ))
     fi
-    t=$(( $t + 1 ))
+    t=$(( t + 1 ))
 done
