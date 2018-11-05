@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#this displays pid along with the precess name of processes containing word bash
+echo $PIDs
+echo $BASHPID
+echo $$ $BASHPID | cat -
+echo $$ | while read line; do echo $line $$ $BASHPID; done
+echo $PIDs
+echo $SHELL
