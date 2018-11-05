@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#writes to infinity and beyond an infinate amount of times when you try to kill
+#it the program states its invincability
+trap "echo I am invincible!!!" SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
