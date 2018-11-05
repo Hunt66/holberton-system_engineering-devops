@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this displays line containing the bash word that allows you to easily get pid
+# shellcheck disable=SC2009
