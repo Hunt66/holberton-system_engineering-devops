@@ -1,10 +1,2 @@
 #!/usr/bin/env ruby
-# @param {String} s
-# @param {String} p
-# @return {Boolean}
-p = "Holberton"
-for items in ARGV
-  if ARGV[items].match(/Holberton/)
-    puts "Holberton"
-    end
-end
+puts ARGV[0].scan(/Holberton/).join
