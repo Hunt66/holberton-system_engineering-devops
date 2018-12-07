@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#pings ip
 if [ ${#BASH_ARGV} -ne 0 ]; then
     ping -c 5 $BASH_ARGV
 else
