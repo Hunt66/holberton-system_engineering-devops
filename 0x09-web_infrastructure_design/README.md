@@ -1,7 +1,7 @@
-##Web Infrastructure and Design
-#Holberton Coding School
-#12-7-2018
-#Erwin Gove
+## Web Infrastructure and Design
+# Holberton Coding School
+# 12-7-2018
+# Erwin Gove
 This repo is made for education
 In this lession I will be learning about web infrastructure and design.
 I will learn the basic design of how someone makes a websight as well as
