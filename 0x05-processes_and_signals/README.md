@@ -1,5 +1,5 @@
-##Bash processes and signals
-#Holberton Coding School
+## Bash processes and signals
+# Holberton Coding School
 11-5-18
 Erwin Gove
 
