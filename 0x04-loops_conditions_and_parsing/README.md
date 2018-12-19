@@ -1,6 +1,6 @@
-##Loops Conditions and Parsing
-#Holberton Coding School
-#Erwin Gove
+## Loops Conditions and Parsing
+# Holberton Coding School
+# Erwin Gove
 11/2/18
 
 This directory is made for education
