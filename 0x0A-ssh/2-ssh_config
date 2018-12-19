@@ -1,0 +1,9 @@
+#This file has all the configurations for ssh
+#
+#
+#host ip address
+Host 35.243.155.238
+#password Athentication off
+PasswordAuthentication no
+#File with privit key
+IdentityFile ~/.ssh/holberton
