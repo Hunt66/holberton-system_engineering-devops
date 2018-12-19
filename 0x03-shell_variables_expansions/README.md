@@ -1,1 +1,1 @@
-#In this project I am learning abouth variables in shell
+# In this project I am learning abouth variables in shell
