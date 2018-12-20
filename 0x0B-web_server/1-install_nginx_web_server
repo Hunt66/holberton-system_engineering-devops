@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+ssh -o "StrictHostKeyChecking=no" -i ~/.ssh/new_key ubuntu@35.185.44.189 sudo apt-get upadate
+ssh -o "StrictHostKeyChecking=no" -i ~/.ssh/new_key ubuntu@35.185.44.189 sudo apt-get install nginx
