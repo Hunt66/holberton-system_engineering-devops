@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #this installs nginx
-apt-get upadate
-apt-get -y install nginx
+sudo apt-get upadate
+sudo apt-get -y install nginx
 sudo service nginx start
-echo "Holberton School" | tee /usr/share/nginx/html/index.html
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
