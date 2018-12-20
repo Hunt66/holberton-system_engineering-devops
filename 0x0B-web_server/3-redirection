@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+#this edits the nginx to have a 301 moved permanently 
