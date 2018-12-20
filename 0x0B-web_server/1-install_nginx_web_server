@@ -2,4 +2,5 @@
 #this installs nginx
 sudo apt-get upadate
 sudo apt-get install nginx
+sudo service nginx start
 echo "Holberton Shcool" | sudo tee ~/usr/share/nginx/html/index.heml
