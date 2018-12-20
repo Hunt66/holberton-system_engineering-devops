@@ -3,4 +3,4 @@
 apt-get upadate
 apt-get -y install nginx
 sudo service nginx start
-echo "Holberton School" | tee ~/usr/share/nginx/html/index.html
+echo "Holberton School" | tee /usr/share/nginx/html/index.html
