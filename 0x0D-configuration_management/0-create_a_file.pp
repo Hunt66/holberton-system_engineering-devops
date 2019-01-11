@@ -1,6 +1,6 @@
 # this code generates a file with a phrase in it
 
-file { "/tmp/holberton":
+file { "holberton":
   ensure  => 'file',
   path    => "/tmp/holberton",
   owner   => "www-data",
