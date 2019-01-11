@@ -1,10 +1,10 @@
-# this code generates a file with a phrase in it
+# this code generates a file with a phrase in it:
 
-file { "holberton":
+file { 'holberton':
   ensure  => 'file',
-  path    => "/tmp/holberton",
-  owner   => "www-data",
-  group   => "www-data",
-  mode    => "0744",
-  content => "I love Puppet"
+  path    => '/tmp/holberton',
+  owner   => 'www-data',
+  group   => 'www-data',
+  mode    => '0744',
+  content => 'I love Puppet'
 }
