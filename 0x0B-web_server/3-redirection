@@ -3,5 +3,5 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 FILE='/etc/nginx/sites-available/default'
-sed -i '30i\\tlocation \/redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n' "$FILE"
+sed -i '30i\n\tlocation \/redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n|g' "$FILE"
 service nginx restart
