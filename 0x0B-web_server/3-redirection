@@ -2,8 +2,6 @@
 #this installs nginx then makes a 301 redirect
 sudo apt-get update
 sudo apt-get -y install nginx
-sudo service nginx start
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 FILE='/etc/nginx/sites-available/default'
 sed -i '30i\\tlocation \/redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n' "$FILE"
 service nginx restart
