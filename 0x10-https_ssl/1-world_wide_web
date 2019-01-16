@@ -2,8 +2,8 @@
 # displays infromation about subdomains
 subinf () {
     a=$(dig -t A +noall +answer $2.$1)
-    b=$(echo $a | awk 'FNR=1 NR == 1 {print $(NF - 1)}')
-    c=$(echo $a | awk 'FNR=1 NR == 1 {print $NF}')
+    b=$(echo $a | awk -F " " '{print $(NF - 1)}')
+    c=$(echo $a | awk -F " " '{print $NF}')
     echo "The subdomain $2 is a $b record and points to $c"
 }
 
