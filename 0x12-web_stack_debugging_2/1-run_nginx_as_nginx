@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # changes the user running the server from root to nginx
 FILE=/etc/nginx/sites-available/default
+FILE2=/etc/nginx/nginx.conf
 
-sed -i '21s/.*/\tlisten 8080 default_server;/' $FILE
-sed -i '22s/.*/\tlisten [::]:8080 default_server ipv6only=on;/' $FILE
-chmod 700 /etc/nginx/nginx.conf
-chown nginx:nginx /etc/nginx/nginx.conf
-pkill apache2
-service nginx restart
+sudo sed -i '21s/.*/\tlisten 8080 default_server;/' $FILE
+sudo sed -i '22s/.*/\tlisten [::]:8080 default_server ipv6only=on;/' $FILE
+sudo sed -i '1s/.*/user nginx;/' $FILE2
+sudo chown -R nginx:nginx $FILE2
+sudo chmod 644 /etc/nginx/nginx.conf
+sudo pkill apache2
+sudo service nginx restart
