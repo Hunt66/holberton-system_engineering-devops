@@ -9,4 +9,4 @@ sudo sed -i '1s/.*/user nginx;/' $FILE2
 sudo chown -R nginx:nginx $FILE2
 sudo chmod 644 /etc/nginx/nginx.conf
 sudo pkill apache2
-sudo service nginx restart
+sudo -u nginx service nginx restart
