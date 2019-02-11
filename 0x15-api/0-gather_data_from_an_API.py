@@ -22,5 +22,5 @@ if __name__ == '__main__':
             print("Employee " + name + " is done with tasks(" +
                   str(len(done)) +
                   '/' + str(len(tsks)) + "):")
-            print('     ', end='')
-            print('\n     '.join(done))
+            print('\t', end='')
+            print('\n\t'.join(done))
