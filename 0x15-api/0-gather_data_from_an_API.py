@@ -19,7 +19,8 @@ if __name__ == '__main__':
                     tsks += [t]
                     if t.get('completed'):
                         done += [t['title']]
-            print("Employee " + name + " is done with tasks(" + str(len(done)) +
+            print("Employee " + name + " is done with tasks(" +
+                  str(len(done)) +
                   '/' + str(len(tsks)) + "):")
-            print('     ',end='')
+            print('     ', end='')
             print('\n     '.join(done))
