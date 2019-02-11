@@ -20,8 +20,8 @@ if __name__ == '__main__':
                     tsks += [t]
             for t in tsks:
                 new_json += [{"task": t.get('title'),
-                         "completed": t.get('completed'),
-                             "username": username}]
+                              "completed": t.get('completed'),
+                              "username": username}]
             freddy = {str(eid): new_json}
             with open(str(eid) + ".json", "w") as f:
                 json.dump(freddy, f)
