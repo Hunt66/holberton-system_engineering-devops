@@ -20,8 +20,8 @@ if __name__ == '__main__':
                     tsks += [t]
             for t in tsks:
                 new_csv += [{"id": eid, "name": username,
-                         "completed": t.get('completed'),
-                         "title": t.get('title')}]
+                             "completed": t.get('completed'),
+                             "title": t.get('title')}]
             kys = ['id', 'name', 'completed', 'title']
             with open(str(eid) + ".csv", "w") as f:
                 wr = csv.DictWriter(f, kys, quoting=csv.QUOTE_ALL)
