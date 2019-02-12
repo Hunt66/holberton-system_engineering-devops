@@ -6,7 +6,7 @@ import csv
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1].isdigit:
+    if len(sys.argv) == 2 and sys.argv[1].isdigit:
         user = get('https://jsonplaceholder.typicode.com/users/' +
                    sys.argv[1]).json()
         if user is not None:
