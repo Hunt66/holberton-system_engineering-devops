@@ -6,7 +6,7 @@ from requests import get
 def recurse_help(subreddit, a, hot_list):
     """help to recurse func"""
     qu = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
-    if a:
+    if not a:
         qu = qu + '?after=' + str(a)
     r = get(qu, headers={'User-Agent': 'Super Meat-Boy'},
             allow_redirects=False)
