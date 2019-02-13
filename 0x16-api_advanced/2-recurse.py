@@ -13,7 +13,7 @@ def recurse_help(subreddit, a, hot_list=[]):
     if r.status_code == 200:
         ri = r.json()
         data = ri.get('data')
-        a  = data.get('after')
+        a = data.get('after')
         children = data.get('children')
         for child in children:
             hot_list += [child.get('data').get('title')]
