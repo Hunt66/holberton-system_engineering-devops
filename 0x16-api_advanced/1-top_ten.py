@@ -2,6 +2,7 @@
 """ contains function top ten"""
 from requests import get
 
+
 def top_ten(subreddit):
     """prints the titles of the first 10 hot posts listed for a subreddit"""
     qu = ('https://www.reddit.com/r/' + subreddit +
