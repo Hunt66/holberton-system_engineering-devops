@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# installs the load balancer
+apt-get update
+apt-get -y install haproxy
+wget https://raw.githubusercontent.com/Hunt6666/holberton-system_engineering-devops/master/0x0F-load_balancer/haproxy.cfg
+mv haproxy.cfg /etc/haproxy
+sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
+service haproxy restart

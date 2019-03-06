@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+""" exports data of user to json format"""
+from requests import get
+import sys
+import json
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1 and sys.argv[1].isdigit:
+        user = get('https://jsonplaceholder.typicode.com/users/' +
+                   sys.argv[1]).json()
+        if user is not None:
+            to_do = get('https://jsonplaceholder.typicode.com/todos/').json()
+            eid = user.get('id')
+            username = user.get('username')
+            tsks = []
+            new_json = []
+            for t in to_do:
+                if t['userId'] == eid:
+                    tsks += [t]
+            for t in tsks:
+                new_json += [{"task": t.get('title'),
+                         "completed": t.get('completed'),
+                             "username": username}]
+            freddy = {str(eid): new_json}
+            with open(str(eid) + ".json", "w") as f:
+                json.dump(to_json, f)

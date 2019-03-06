@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # displays infromation about subdomains
 subinf () {
-    a=$(dig -t A +noall +answer $2.$1)
-    b=$(echo $a | awk 'NR == 1 {print $(NF - 1)}')
-    c=$(echo $a | awk 'NR == 1 {print $NF}')
+    a=$(dig -t A +noall +answer "$2"."$1")
+    b=$(echo "$a" | awk 'NR == 1 {print $(NF - 1)}')
+    c=$(echo "$a" | awk 'NR == 1 {print $NF}')
     echo "The subdomain $2 is a $b record and points to $c"
-)
+}
 
 if [ $2 ]; then
     subinf $1 $2
 else
-    declare -a subs=("www" "lb-01" "web-01" "web-02")
+    subs=( 'www' 'lb-01' 'web-01' 'web-02' )
     for i in "${subs[@]}";
-        do
+    do
 	subinf $1 $i
-	done
+    done
 fi

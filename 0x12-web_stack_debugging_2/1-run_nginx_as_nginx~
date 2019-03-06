@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# changes the user running the server from root to nginx
+FILE=/etc/nginx/sites-available/default
+
+sed -i '21s \ #' $FILE

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this installs nginx and configures another server
+apt-get update
+apt-get -y install nginx
+service nginx start
+echo "Holberton School FTW!!!" > /usr/share/html/index.html
+FILE=/etc/nginx/sites-available/default
+sed -i "35i \\\tadd_header X-Server-By \$hostname;" $FILE
+service nginx restart
